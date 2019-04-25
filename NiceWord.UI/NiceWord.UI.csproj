@@ -108,6 +108,18 @@
     <Content Include="Content\script\fastclick.js" />
     <Content Include="Content\script\jquery.min.js" />
     <Content Include="Content\script\jquery.slimscroll.min.js" />
+    <Content Include="Content\Uploads\UserImages\CruptedImages\4d8f6084-a358-4e57-bc21-8ee25a16f841.jpg" />
+    <Content Include="Content\Uploads\UserImages\CruptedImages\5224ec8e-e174-41c6-bd33-0ec8bf8fbfc8.jpg" />
+    <Content Include="Content\Uploads\UserImages\CruptedImages\f7dc2f2b-fb58-4d7e-bd8c-586342b03978.jpg" />
+    <Content Include="Content\Uploads\UserImages\CruptedImages\userlogo.jpg" />
+    <Content Include="Content\Uploads\UserImages\OriginalImages\4d8f6084-a358-4e57-bc21-8ee25a16f841.jpg" />
+    <Content Include="Content\Uploads\UserImages\OriginalImages\5224ec8e-e174-41c6-bd33-0ec8bf8fbfc8.jpg" />
+    <Content Include="Content\Uploads\UserImages\OriginalImages\f7dc2f2b-fb58-4d7e-bd8c-586342b03978.jpg" />
+    <Content Include="Content\Uploads\UserImages\OriginalImages\userlogo.jpg" />
+    <Content Include="Content\Uploads\UserImages\XSmallImages\4d8f6084-a358-4e57-bc21-8ee25a16f841.jpg" />
+    <Content Include="Content\Uploads\UserImages\XSmallImages\5224ec8e-e174-41c6-bd33-0ec8bf8fbfc8.jpg" />
+    <Content Include="Content\Uploads\UserImages\XSmallImages\f7dc2f2b-fb58-4d7e-bd8c-586342b03978.jpg" />
+    <Content Include="Content\Uploads\UserImages\XSmallImages\userlogo.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -165,7 +177,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\Base\" />
-    <Folder Include="Content\image\" />
+    <Folder Include="Content\Image\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

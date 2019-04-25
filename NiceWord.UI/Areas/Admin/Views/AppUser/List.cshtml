@@ -33,8 +33,10 @@
                                 <th>LastName</th>
                                 <th>UserName</th>
                                 <th>Email</th>
+                                <th>Fotoğraf</th>
                                 <th>Password</th>
                                 <th>Role</th>
+
                                 <th>Update</th>
                                 <th>Delete</th>
                             </tr>
@@ -47,9 +49,10 @@
                                 <td>@item.LastName</td>
                                 <td>@item.UserName</td>
                                 <td>@item.Email</td>
+                                <td><img src="@item.XSmallUserImage" /></td>
                                 <td>@item.Password</td>
                                 <td>@item.Role</td>
-                                
+
                                 <td><a href="/Admin/AppUser/Update/@item.ID" type="button" class="btn btn-block btn-warning">Update</a></td>
                                 <td><a href="/Admin/AppUser/Delete/@item.ID" type="button" class="btn btn-block btn-danger">Delete</a></td>
                             </tr>

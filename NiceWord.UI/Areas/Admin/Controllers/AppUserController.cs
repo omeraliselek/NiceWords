@@ -1,6 +1,7 @@
 ﻿using NiceWord.Model.Option;
 using NiceWord.Service.Option;
 using NiceWord.UI.Areas.Admin.Models.DTO;
+using NiceWord.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,27 @@ namespace NiceWord.UI.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(AppUser data)
+        public ActionResult Add(AppUser data, HttpPostedFileBase Image)
         {
+            List<string> UploadedImagePaths = new List<string>();
+
+            UploadedImagePaths = ImageUploader.UploadSingleImage(ImageUploader.OriginalProfileImagePath, Image, 1);
+
+            data.UserImage = UploadedImagePaths[0];
+
+            if (data.UserImage == "0" || data.UserImage == "1" || data.UserImage == "2")
+            {
+                data.UserImage = ImageUploader.DefaultProfileImagePath;
+                data.XSmallUserImage = ImageUploader.DefaultXSmallProfileImage;
+                data.CruptedUserImage = ImageUploader.DefaulCruptedProfileImage;
+            }
+            else
+            {
+                data.XSmallUserImage = UploadedImagePaths[1];
+                data.CruptedUserImage = UploadedImagePaths[2];
+            }
+
+            data.Status = Core.Enum.Status.Active;
             _appUserService.Add(data);
             return Redirect("/Admin/AppUser/List");
         }

@@ -20,5 +20,8 @@ namespace NiceWord.Model.Option
         public string Email { get; set; }
         public string Address { get; set; }
         public DateTime? Birthdate { get; set; }
+        public string UserImage { get; set; }
+        public string XSmallUserImage { get; set; }
+        public string CruptedUserImage { get; set; }
     }
 }

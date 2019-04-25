@@ -16,7 +16,9 @@ namespace NiceWord.Map.Option
             Property(x => x.Address).HasMaxLength(150).IsOptional();
             Property(x => x.Birthdate).HasColumnType("datetime2").IsOptional();
             Property(x => x.Email).HasMaxLength(90).IsOptional();
-            Property(x => x.ImagePath).IsOptional();
+            Property(x => x.UserImage).IsOptional();
+            Property(x => x.XSmallUserImage).IsOptional();
+            Property(x => x.CruptedUserImage).IsOptional();
             Property(x => x.UserName).HasMaxLength(50).IsRequired();
             Property(x => x.Password).HasMaxLength(50).IsRequired();
             Property(x => x.Role).IsOptional();
